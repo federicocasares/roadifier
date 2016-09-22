@@ -1,5 +1,8 @@
-# Stratecam
+# Roadifier
 (an open-source road mesh generator for Unity)
+
+## What is it?
+Basically Roadifier takes a list of points and a terrain object and automatically generates a mesh representing a road of the specified width that follow the terrain's height and normals. It's great to make roads in strategy games using the standard Unity terrain, and with a couple of changes it could be adapted to make train tracks, rivers and much more!
 
 ## Important Information
 This repository contains an example project that includes a few Unity Standard Assets. These are distributed here only as part of the example scene to demonstrate the capabilities of Roadifier. If you are not interested in that and only want the component itself to test it out in your own project, feel free to proceed to copy the .js scripts in the Scripts directory and nothing else.
