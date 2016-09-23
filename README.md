@@ -12,6 +12,7 @@ Getting Roadifier running is really easy. It's as simple as getting a copy of th
 
 ## Where can I see a demo?
 [You can find a demo of the latest version of Roadifier here.](http://www.windsoftrade.net/roadifier)
+[You can also find a short video showcasing its capabilities here.](https://www.youtube.com/watch?v=tM7v4ij0qmI)
 
 ## What do the options mean?
 Almost all of the settings are pretty much self explanatory, but here are the details:
@@ -19,6 +20,8 @@ Almost all of the settings are pretty much self explanatory, but here are the de
 * Road Width: The width of the road mesh, specified in world units. Thinner roads usually adapt better to the terrain shape.
 * Smoothing factor: A float between 0.0 and 0.5 specifying how much smoothing should be applied to corners. Values close to 0.2 and 0.3 usually work well. Setting it to 0.0 disables smoothing altogether.
 * Smoothing iterations: How many times, between 0 and 5, the smoothing algorithm should be applied. More iterations provide smoother results but also ends up creating a lot of extra vertices and faces. It's recommended to set this to 1 or 2. Also, applying too many smoothing iterations might cause the final mesh to have artifacts.
+* Material: The material that will be applied to the road mesh.
+* Terrain Clerance: An offset in the y-axis applied to every vertex in the road mesh. It's used to avoid z-fighting against the terrain object. Values close to 0.1 usually work well, but it depends on the scale of your world and the frequency of variations in the terrain height.
 
 ## How does it work?
 Basically, doing a lot of math. If you like algebra, this is definitely the place for you. I'll publish a short video explaining the inner workings of Roadifier soon.
